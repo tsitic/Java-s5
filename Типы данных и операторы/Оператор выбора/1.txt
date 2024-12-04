@@ -1,0 +1,71 @@
+                                 "целочисленные и им подобные"- byte, short, int, char
+int value = 2;
+switch (value) {
+    case 1:
+        ...
+        break;
+    case 2:
+        ...
+        break;
+    default:
+        ...
+}
+
+int char = '2';
+switch (value) {
+    case '1':
+        ...
+        break;
+    case '2':
+        ...
+        break;
+    default:
+        ...
+}
+
+                                   Перечисления (enum)
+
+
+enum Color { RED, GREEN, BLUE}
+Color color = Color.RED;
+switch (color) {
+    case RED:
+        ...
+        break;
+    case GREEN:
+        ..
+        break;
+    default:
+       ...
+}
+
+
+                                   Строки (String)
+
+String name = "Gosha";
+switch (name) {
+    case "Gosa":
+        System.out.println("Hello, Gosha.");
+        break;
+    case "Oleg":
+        System.out.println("Hello, Gosha.");
+        break;
+    deafult:
+        System.out.println("Hello, "+name+".");
+}
+
+                                  Целочисленные классы-обертки
+
+
+Integer number = 2;
+switch (number) {
+    case 1:
+        ...
+        break;
+    case 2:
+        ...
+        break;
+    default:
+        ...
+}
+
