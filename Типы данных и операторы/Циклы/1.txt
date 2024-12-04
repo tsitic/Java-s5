@@ -1,0 +1,14 @@
+ex1:
+while(true){
+    ....
+}
+
+ex2:
+do {
+    System.out.println("У попа была собака,");
+    System.out.println("Он ее любил.");
+    System.out.println("Она съела кусок мяса —");
+    System.out.println("Он ее убил.");
+    System.out.println("И в землю закопал.");
+    System.out.println("И надпись написал:");
+} while (1==1);
