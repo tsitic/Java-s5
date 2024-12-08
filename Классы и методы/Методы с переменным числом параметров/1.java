@@ -17,6 +17,6 @@ public class printNum {
 
     public static void main(String[] args) {
         display(1, 2, 3, 4);               // Вызов метода с int
-        display("Привет", "Мир");          // Вызов метода с String
+        display("Hello", "Word");          // Вызов метода с String
     }
 }
