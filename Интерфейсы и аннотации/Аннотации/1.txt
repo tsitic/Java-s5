@@ -1,1 +1,54 @@
+@Override
+Нужна для того чтобы указать что метод переопределяет метод суперкласса (или реализует метод интерфейса)
+пример: https://github.com/tsitic/Java-s5/blob/main/Наследование%20и%20полиморфизм/Переопределение%20методов%20и%20полиморфизм/2.java
 
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+@Deprecated
+Используется для обозначения, что метод, класс или другой элемент устарел и не должен использоваться
+
+
+class A {
+    @Deprecated
+    public void oldMethod() {
+        System.out.println("old");
+    }
+
+    public void newMethod() {
+        System.out.println("This is NEW!");
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        A a = new A();
+        a.oldMethod(); //Компилятор выдаст предупреждение что используется старый метод
+        a.newMethod();
+    }
+}
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+@SuppressWarnings
+Используется для подавления определённых предупреждений компилятора
+
+
+class A {
+
+    @SuppressWarnings("deprecation") // Подавляем предупреждение о вызове устаревшего метода
+    public void useDeprecatedMethod() {
+        oldMethod();
+    }
+
+    @Deprecated
+    public void oldMethod() {
+        System.out.println("old");
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        A a = new A();
+        a.useDeprecatedMethod(); // Предупреждение не отображается благодаря @SuppressWarnings
+    }
+}
