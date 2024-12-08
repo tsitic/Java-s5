@@ -1,0 +1,60 @@
+ArithmeticException
+try {
+    int result = 10 / 0;
+} catch (ArithmeticException e) {
+    System.out.println("diff to zero: " + e.getMessage());
+}
+
+Деление на ноль.
+
+-------------------------------------------------------------------------
+ArrayIndexOutOfBoundsException
+
+try {
+    int[] arr = {1, 2, 3};
+    int num = arr[5];
+} catch (ArrayIndexOutOfBoundsException e) {
+    System.out.println("Выход за пределы массива: " + e.getMessage());
+}
+Обращение к элементу массива за его пределами.
+
+-------------------------------------------------------------------------
+IllegalArgumentException
+
+public static void setAge(int age) {
+    if (age < 0) {
+        throw new IllegalArgumentException("Not negative sign");
+    }
+}
+
+try {
+    setAge(-5);
+} catch (IllegalArgumentException e) {
+    System.out.println("Неверный аргумент: " + e.getMessage());
+}
+
+Передача неверного аргумента в метод.
+
+-------------------------------------------------------------------------
+ClassCastException
+
+try {
+    Object obj = "String";
+    Integer num = (Integer) obj; // Ошибка приведения типа
+} catch (ClassCastException e) {
+    System.out.println("Неверное приведение типов: " + e.getMessage());
+}
+
+Неверное приведение типов.
+
+-------------------------------------------------------------------------
+NullPointerException
+
+try {
+    String str = null;
+    int length = str.length(); // Ошибка из-за null
+} catch (NullPointerException e) {
+    System.out.println("Обращение к null: " + e.getMessage());
+}
+
+Обращение к методу или полю null объекта.
