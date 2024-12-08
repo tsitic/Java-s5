@@ -35,3 +35,17 @@ public class Main {
         System.out.println("StringBuffer substring(1, 3): " + sub);
     }
 }
+
+/*
+StringBuilder after append: Cat runs
+StringBuilder after insert: Cat fast runs
+StringBuilder after replace: Cat slowruns
+StringBuilder after delete: Cat uns
+StringBuilder after reverse: snu taC
+
+StringBuffer capacity: 19
+StringBuffer after ensureCapacity: 50
+StringBuffer charAt(1): o
+StringBuffer after setCharAt: Dag
+StringBuffer substring(1, 3): ag
+*/
