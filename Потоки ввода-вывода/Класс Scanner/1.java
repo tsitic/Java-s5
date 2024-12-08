@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         try {
-            File file = new File("README.txt");
+            File file = new File("Read.txt");
 
             Scanner fileScanner = new Scanner(file);
 
