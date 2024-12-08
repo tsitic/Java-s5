@@ -1,1 +1,18 @@
+Переменная START_COUNTER
+Это final static переменная, которая должна быть инициализирована только один раз.
+В статическом блоке выполняется её инициализация с помощью метода Integer.parseInt("Y-")
 
+Метод Integer.parseInt(String)
+Метод предназначен для преобразования строкового представления числа в тип int.
+Строка "Y-" не является корректным числовым значением. Поэтому вызов этого метода выбросит исключение NumberFormatException
+
+Ошибка выполнения
+Исключение NumberFormatException выбрасывается во время инициализации статического блока.
+Статические блоки инициализируются до выполнения метода main.
+Таким образом, программа завершится с ошибкой до выполнения строки System.out.println("Hello");
+
+Итог
+Exception in thread "main" java.lang.NumberFormatException: For input string: "Y-"
+    at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+    at java.base/java.lang.Integer.parseInt(Integer.java:652)
+    at App.<clinit>(App.java:4)
